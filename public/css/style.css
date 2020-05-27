@@ -1,0 +1,406 @@
+
+@font-face {
+    font-family: "Avenir-Bk";
+    src: url(../assets/_fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+    font-family: "Avenir-Med";
+    src: url(../assets/_fonts/AvenirLTStd-Medium.otf);
+}
+
+@font-face {
+    font-family: "Avenir-Rom";
+    src: url(../assets/_fonts/AvenirLTStd-Roman.otf);
+}
+
+/* ======================================= GENERAL STYLE ======================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Avenir-Bk, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================= HEADER STYLE ======================================= */
+
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 25px -10px rgba(0,0,0,0.6);
+    color: #DAA520;
+}
+
+.logo {
+    font-size: 42px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #DAA520;
+}
+
+/* ======================================= NAV STYLE ======================================= */
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: #333;
+    box-shadow: 0px 1px 25px -10px rgba(0,0,0,0.6);
+    color: #DAA520;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+}
+
+.navbar nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-img-1 {
+    width: auto;
+    height: 30px;
+}
+
+/* ======================================= CONTAINER STYLE ======================================= */
+
+/* HOME STYLE */
+
+#home .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .content {
+    width: 70%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#home .tagline {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .layout-1 {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home .layout-1 p {
+    text-align: center;
+    padding: 5em;
+}
+
+/* SHOP STYLE */
+
+#shop .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shop .content {
+    width: 70%;
+    min-height: 100vh;
+    padding-top: 1em;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#shop .heading {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shop .product {
+    width: 26%;
+    height: 450px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+#shop .product-img {
+    width: 100%;
+    height: 80%;
+    background-color: #FFF;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+}
+
+#shop .product-img img {
+    width: 90%;
+    height: auto;
+}
+
+#shop .product .product-btn {
+    width: 100%;
+    height: 25%;
+    padding-bottom: .5em;
+    background-color: #333;
+    font-size: 22px;
+    text-decoration: none;
+    color: #DAA520;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    top: -12.5%;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transform-origin: top center;
+    transition: .25s ease-in-out;
+}
+
+#shop .product .product-btn:hover {
+    transform: translateY(7.5%);
+}
+
+#shop .product a span {
+    transform-origin: bottom center;
+}
+
+#shop .product a .arrow {
+    width: auto;
+    height: 29px;
+    position: absolute;
+    right: 1em;
+    transform-origin: bottom center;
+}
+
+#shop .tagline {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shop .layout-1 {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home .layout-1 p {
+    text-align: center;
+    padding: 5em;
+}
+
+/* ACCOUNT STYLE */
+
+#account .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#account .content {
+    width: 70%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#account .login-box {
+    width: 35%;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 19%;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+}
+
+#account .login-top {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#account .login-top button {
+    width: 50%;
+    height: 100%;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px 0px 0px 0px;
+    background-color: #DAA520;
+    color: #333;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+#account .login-top button:nth-child(2) {
+    border-radius: 0px 10px 0px 0px;
+    background-color: #333;
+    color: #DAA520;
+}
+
+#account .login-form {
+    width: 100%;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#account .username {
+    width: 65%;
+    height: 60px;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+#account .password {
+    width: 65%;
+    height: 60px;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+#account .submit {
+    width: 50%;
+    height: 60px;
+    padding-left: 1em;
+    margin-top: 2.5em;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #DAA520;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#account .submit:hover {
+    background-color: #DAA520;
+    color: #333;
+}
+
+/* ======================================= PRODUCT STYLE ======================================= */
+
+#product .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product .content {
+    width: 70%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} 
+
+#product .product-box {
+    width: 35%;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 19%;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+}
+
+/* ======================================= FOOTER STYLE ======================================= */
+
+footer {
+    width: 100%;
+    height: 12vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DAA520;
+}
+
+.copy-text {
+    font-size: 20px;
+}
