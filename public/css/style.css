@@ -1,701 +1,851 @@
-
 @font-face {
-    font-family: "Avenir-Bk";
-    src: url(../assets/_fonts/AvenirLTStd-Book.otf);
+  font-family: "Avenir-Bk";
+  src: url(../assets/_fonts/AvenirLTStd-Book.otf);
 }
 
 @font-face {
-    font-family: "Avenir-Med";
-    src: url(../assets/_fonts/AvenirLTStd-Medium.otf);
+  font-family: "Avenir-Med";
+  src: url(../assets/_fonts/AvenirLTStd-Medium.otf);
 }
 
 @font-face {
-    font-family: "Avenir-Rom";
-    src: url(../assets/_fonts/AvenirLTStd-Roman.otf);
+  font-family: "Avenir-Rom";
+  src: url(../assets/_fonts/AvenirLTStd-Roman.otf);
 }
 
 /* ======================================= GENERAL STYLE ======================================= */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    font-family: Avenir-Bk, sans-serif;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  font-family: Avenir-Bk, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .fa-icon {
-    text-decoration: none;
-    color: #DAA520;
+  text-decoration: none;
+  color: #daa520;
 }
 
 /* ======================================= HEADER STYLE ======================================= */
 
 header {
-    width: 100%;
-    height: 8vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 1px 25px -10px rgba(0,0,0,0.6);
-    color: #DAA520;
+  width: 100%;
+  height: 8vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 25px -10px rgba(0, 0, 0, 0.6);
+  color: #daa520;
 }
 
 .logo {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .logo-link {
-    text-decoration: none;
-    color: #DAA520;
+  text-decoration: none;
+  color: #daa520;
 }
 
 /* ======================================= NAV STYLE ======================================= */
 
 .navbar {
-    width: 100%;
-    height: 7vh;
-    background-color: #333;
-    box-shadow: 0px 1px 25px -10px rgba(0,0,0,0.6);
-    color: #DAA520;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
-    opacity: 1;
+  width: 100%;
+  height: 7vh;
+  background-color: #333;
+  box-shadow: 0px 1px 25px -10px rgba(0, 0, 0, 0.6);
+  color: #daa520;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 1;
 }
 
 .navbar nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .nav-img-1 {
-    width: auto;
-    height: 30px;
+  width: auto;
+  height: 30px;
 }
 
 /* ======================================= CONTAINER STYLE ======================================= */
 
-/* HOME STYLE */
+/* ======================================= HOME STYLE ======================================= */
 
 #home .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #home .content {
-    width: 70%;
-    min-height: 100vh;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grid-container-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 35px;
+  grid-template-areas: "home-1 home-2 home-3";
+}
+
+.home-1 {
+  grid-area: home-1;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
+}
+
+.home-2 {
+  grid-area: home-2;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
+}
+
+.home-3 {
+  grid-area: home-3;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
 }
 
 #home .tagline {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #home .layout-1 {
-    width: 100%;
-    height: 35vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #home .layout-1 p {
+  text-align: center;
+  padding: 5em;
+}
+
+.fa-large {
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-    padding: 5em;
 }
 
 /* SHOP STYLE */
 
 #shop .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #shop .content {
-    width: 70%;
-    min-height: 100vh;
-    padding-top: 1em;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
+  width: 70%;
+  min-height: 100vh;
+  padding-top: 1em;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 #shop .heading {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #shop .product {
-    width: 26%;
-    height: 450px;
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
+  width: 26%;
+  height: 450px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
 }
 
 #shop .product-img {
-    width: 100%;
-    height: 80%;
-    background-color: #FFF;
-    display: flex;
-    align-self: flex-start;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
 }
 
 #shop .product-img img {
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
 }
 
 #shop .product .product-btn {
-    width: 100%;
-    height: 25%;
-    padding-bottom: .5em;
-    background-color: #333;
-    font-size: 22px;
-    text-decoration: none;
-    color: #DAA520;
-    display: flex;
-    align-self: flex-end;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    top: -12.5%;
-    z-index: -1;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    cursor: pointer;
-    transform-origin: top center;
-    transition: .25s ease-in-out;
+  width: 100%;
+  height: 25%;
+  padding-bottom: 0.5em;
+  background-color: #333;
+  font-size: 22px;
+  text-decoration: none;
+  color: #daa520;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  top: -12.5%;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transform-origin: top center;
+  transition: 0.25s ease-in-out;
 }
 
 #shop .product .product-btn:hover {
-    transform: translateY(7.5%);
+  transform: translateY(7.5%);
 }
 
 #shop .product a span {
-    transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 #shop .product a .arrow {
-    width: auto;
-    height: 29px;
-    position: absolute;
-    right: 1em;
-    transform-origin: bottom center;
+  width: auto;
+  height: 29px;
+  position: absolute;
+  right: 1em;
+  transform-origin: bottom center;
 }
 
 #shop .tagline {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #shop .layout-1 {
-    width: 100%;
-    height: 35vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #home .layout-1 p {
-    text-align: center;
-    padding: 5em;
+  text-align: center;
+  padding: 5em;
 }
 
 /* ======================================= LOGIN / REGISTREER STYLE ======================================= */
 
 #login .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #login .content {
-    width: 70%;
-    min-height: 100vh;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #login .login-box {
-    width: 35%;
-    height: 600px;
-    background-color: #FFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: absolute;
-    top: 19%;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+  width: 35%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 19%;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
 }
 
 #login .login-top {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #login .login-top a {
-    width: 50%;
-    height: 100%;
-    font-size: 22px;
-    border: none;
-    border-radius: 10px 0px 0px 0px;
-    background-color: #DAA520;
-    color: #333;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: table;
+  width: 50%;
+  height: 100%;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px 0px 0px 0px;
+  background-color: #daa520;
+  color: #333;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: table;
 }
 
 #login .login-top a span {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #login .login-top a:nth-child(2) {
-    border-radius: 0px 10px 0px 0px;
-    background-color: #333;
-    color: #DAA520;
+  border-radius: 0px 10px 0px 0px;
+  background-color: #333;
+  color: #daa520;
 }
 
 #login .login-form {
-    width: 100%;
-    height: 525px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #login .username {
-    width: 65%;
-    height: 60px;
-    padding-left: 1em;
-    margin-bottom: 1.5em;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    background-color: #f2f2f2;
+  width: 65%;
+  height: 60px;
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
 }
 
 #login .password {
-    width: 65%;
-    height: 60px;
-    padding-left: 1em;
-    margin-bottom: 1.5em;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    background-color: #f2f2f2;
+  width: 65%;
+  height: 60px;
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
 }
 
 #login .email {
-    width: 65%;
-    height: 60px;
-    padding-left: 1em;
-    margin-bottom: 1.5em;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    background-color: #f2f2f2;
+  width: 65%;
+  height: 60px;
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
 }
 
 #login .submit {
-    width: 50%;
-    height: 60px;
-    padding-left: 1em;
-    margin-top: 2.5em;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    background-color: #333;
-    color: #DAA520;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-    text-decoration: none;
+  width: 50%;
+  height: 60px;
+  padding-left: 1em;
+  margin-top: 2.5em;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #daa520;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 #login .submit:hover {
-    background-color: #DAA520;
-    color: #333;
+  background-color: #daa520;
+  color: #333;
 }
 
 /* ======================================= PRODUCT STYLE ======================================= */
 
 #product .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #product .content {
-    width: 70%;
-    min-height: 100vh;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-} 
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 #product .product-box {
-    width: 35%;
-    height: 600px;
-    background-color: #FFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: absolute;
-    top: 19%;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
+  width: 35%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 19%;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
 }
 
 /* ======================================= FOOTER STYLE ======================================= */
 
 footer {
-    width: 100%;
-    height: 12vh;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #DAA520;
+  width: 100%;
+  height: 12vh;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #daa520;
 }
 
 .copy-text {
-    font-size: 20px;
-    margin-top: -45px;
+  font-size: 20px;
+  margin-top: -45px;
 }
 
 /* ======================================= ACCOUNT STYLE ======================================= */
 
 #account .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #account .content {
-    width: 70%;
-    min-height: 100vh;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-container {
-    display: grid;
-    margin-top: -130px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px 10px;
-    grid-template-areas: "long small-one small-two" "long small-three small-four";
-  }
-  
-.long { 
-    grid-area: long; 
-    background-color: #fff;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    position: relative;
+  display: grid;
+  margin-top: -130px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "long small-one small-two" "long small-three small-four";
 }
 
-.small-one { 
-    grid-area: small-one; 
-    background-color: #fff;
-    height: 35vh;
-    width: 35vh;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    position: relative;
+.long {
+  grid-area: long;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
 }
 
-.small-two { 
-    grid-area: small-two; 
-    background-color: #fff;
-    height: 35vh;
-    width: 35vh;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    position: relative;
+.small-one {
+  grid-area: small-one;
+  background-color: #fff;
+  height: 35vh;
+  width: 35vh;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
 }
 
-.small-three { 
-    grid-area: small-three; 
-    background-color: #fff;
-    height: 35vh;
-    width: 35vh;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    position: relative;
+.small-two {
+  grid-area: small-two;
+  background-color: #fff;
+  height: 35vh;
+  width: 35vh;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
 }
 
-.small-four { 
-    grid-area: small-four; 
-    background-color: #fff;
-    height: 35vh;
-    width: 35vh;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    position: relative;
+.small-three {
+  grid-area: small-three;
+  background-color: #fff;
+  height: 35vh;
+  width: 35vh;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.small-four {
+  grid-area: small-four;
+  background-color: #fff;
+  height: 35vh;
+  width: 35vh;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
 }
 
 .top {
-    background-color: #333;
-    height: 6vh;
-    width: 100%;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    top: 0;
-    position: absolute;
-    color: #DAA520;
-    font-size: 20px;
-    display: table;
+  background-color: #333;
+  height: 6vh;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 0;
+  position: absolute;
+  color: #daa520;
+  font-size: 20px;
+  display: table;
 }
 
 .top p {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .bottom {
-    background-color: #333;
-    height: 6vh;
-    width: 100%;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    bottom: 0;
-    position: absolute;
-    color: #DAA520;
-    font-size: 20px;
-    display: table;
+  background-color: #333;
+  height: 6vh;
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  bottom: 0;
+  position: absolute;
+  color: #daa520;
+  font-size: 20px;
+  display: table;
 }
 
 .bottom p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.bottom i {
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.bottom a {
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.account-profile--picture {
+    border: 3px solid #333;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+}
+
+.account-profile--picture i {
     display: table-cell;
     vertical-align: middle;
 }
 
-.bottom i {
-    display: table-cell;
-    vertical-align: middle;
-    position: absolute;
-    right: 0;
-    padding-top: 8px;
-    padding-right: 5px;
+.account-gegevens {
+    text-align: center;
+    color: #333;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 /* ======================================= VRAGEN STYLE ======================================= */
 
 #vragen .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #vragen .content {
-    width: 70%;
-    min-height: 100vh;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#vragen .heading {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-container-vragen {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px 1px;
-    grid-template-areas: "vraag-1" "vraag-2" "vraag-3" "vraag-4" "vraag-5" "vraag-6" "vraag-7" "vraag-8" "vraag-9";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 1px;
+  grid-template-areas: "vraag-1" "vraag-2" "vraag-3" "vraag-4" "vraag-5" "vraag-6" "vraag-7" "vraag-8" "vraag-9";
 }
 
-.vraag-1 { 
-    grid-area: vraag-1;
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-1 {
+  grid-area: vraag-1;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-2 { 
-    grid-area: vraag-2; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-2 {
+  grid-area: vraag-2;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-3 { 
-    grid-area: vraag-3; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-3 {
+  grid-area: vraag-3;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-4 { 
-    grid-area: vraag-4; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-4 {
+  grid-area: vraag-4;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-5 { 
-    grid-area: vraag-5; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-5 {
+  grid-area: vraag-5;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-6 { 
-    grid-area: vraag-6; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-6 {
+  grid-area: vraag-6;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-7 { 
-    grid-area: vraag-7; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-7 {
+  grid-area: vraag-7;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-8 { 
-    grid-area: vraag-8; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-8 {
+  grid-area: vraag-8;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
-.vraag-9 { 
-    grid-area: vraag-9; 
-    background-color: #333;
-    width: 100vh;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.25);
-    display: table;
-    position: relative;
+.vraag-9 {
+  grid-area: vraag-9;
+  background-color: #333;
+  width: 100vh;
+  height: 6vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  display: table;
+  position: relative;
 }
 
 .vragen-text {
-    color: #DAA520;
-    font-size: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+  color: #daa520;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .vragen-icon {
-    display: table-cell;
-    vertical-align: middle;
-    position: absolute;
-    right: 0;
-    padding-top: 4px;
-    padding-right: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  padding-top: 4px;
+  padding-right: 15px;
+}
+
+/* ======================================= SHOP HOME STYLE ======================================= */
+
+#shop-home .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#shop-home .content {
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container-shop {
+  margin-top: -20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 35px;
+  grid-template-areas: "boozeboxes persoonlijkadvies producten";
+}
+
+.boozeboxes {
+  grid-area: boozeboxes;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
+}
+
+.persoonlijkadvies {
+  grid-area: persoonlijkadvies;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
+}
+
+.producten {
+  grid-area: producten;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
 }
