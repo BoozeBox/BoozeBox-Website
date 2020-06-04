@@ -169,9 +169,9 @@ header {
 }
 
 .fa-large {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 /* SHOP STYLE */
@@ -201,6 +201,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 
 #shop .product {
@@ -610,30 +611,46 @@ footer {
   right: 0;
   padding-top: 8px;
   padding-right: 5px;
+  text-decoration: none;
+  color: #daa520;
 }
 
 .account-profile--picture {
-    border: 3px solid #333;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: table;
+  border: 3px solid #333;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: table;
 }
 
 .account-profile--picture i {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .account-gegevens {
-    text-align: center;
-    color: #333;
-    font-size: larger;
-    font-weight: bolder;
+  text-align: center;
+  color: #333;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.tekstje {
+  padding-top: 50px;
+  padding-left: 10px;
+  color: #000;
+  font-size: larger;
+}
+
+.tekstje2 {
+  padding-top: 30px;
+  padding-left: 10px;
+  color: #000;
+  font-size: larger;
 }
 
 /* ======================================= VRAGEN STYLE ======================================= */
@@ -662,6 +679,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .grid-container-vragen {
@@ -808,6 +826,11 @@ footer {
   justify-content: center;
 }
 
+#shop-home .content a {
+  text-decoration: none;
+  color: #daa520;
+}
+
 .grid-container-shop {
   margin-top: -20vh;
   display: grid;
@@ -848,4 +871,277 @@ footer {
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
   position: relative;
   display: table;
+}
+
+/* ======================================= BOX SHOP STYLE ======================================= */
+
+#boxshop .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boxshop .content {
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container-boxshop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "productfoto productinfo";
+}
+
+.productfoto {
+  grid-area: productfoto;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0px 0px 10px;
+  height: 65vh;
+  width: 40vh;
+  display: table;
+}
+
+.productinfo {
+  grid-area: productinfo;
+  background-color: #333;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px 10px 0px;
+  height: 65vh;
+  width: 40vh;
+}
+
+#boxshop .product-img--box {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#boxshop .product-img--box img {
+  width: 350px;
+}
+
+.product-info--box {
+  color: #daa520;
+}
+
+.product-info--box .title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.product-info--box a {
+  color: #daa520;
+  text-decoration: none;
+}
+
+.product-info--box .beschrijving {
+  font-size: larger;
+  padding-left: 50px;
+}
+
+.product-info--box .bestel-knop {
+  font-size: larger;
+  text-align: right;
+  padding-right: 25px;
+}
+
+.product-info--box .bestel-knop a {
+  color: #daa520;
+  text-decoration: none;
+}
+
+/* ======================================= PRODUCTEN STYLE ======================================= */
+
+#producten .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#producten .content {
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#producten .heading {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container-producten {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px 50px;
+  grid-template-areas: "fles-1 fles-2 fles-3" "fles-4 fles-5 fles-6" "fles-7 fles-8 fles-9";
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fles-1 {
+  grid-area: fles-1;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+  height: 40vh;
+  width: 30vh;
+}
+
+.fles-2 {
+  grid-area: fles-2;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-3 {
+  grid-area: fles-3;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-4 {
+  grid-area: fles-4;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-5 {
+  grid-area: fles-5;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-6 {
+  grid-area: fles-6;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-7 {
+  grid-area: fles-7;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-8 {
+  grid-area: fles-8;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fles-9 {
+  grid-area: fles-9;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+#producten .product-img--box {
+  display: table;
+}
+
+#producten .product-img--box img {
+  margin-left: 125%;
+  margin-right: auto;
+  display: block;
+  padding-top: 30px;
+  height: auto;
+}
+
+/* ======================================= ADVIES STYLE ======================================= */
+
+#advies .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#advies .content {
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#advies .heading {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -250px;
+}
+
+.grid-container-advies {
+  margin-top: -20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 35px;
+  grid-template-areas: "advies-1 advies-2";
+}
+
+.advies-1 {
+  grid-area: advies-1;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
+  margin-top: -400px;
+}
+
+.advies-2 {
+  grid-area: advies-2;
+  width: 35vh;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: table;
+  margin-top: -400px;
 }
