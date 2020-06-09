@@ -12,7 +12,7 @@ Dit is de BoozeBox website Repository, hier vind je alle assets en al de code di
 
 ## Video over design
 
-- onderweg
+[Bekijk video hier](https://youtu.be/jHPAIKyGQ7Y)
 
 ## Developers
 
