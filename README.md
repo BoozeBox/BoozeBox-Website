@@ -1,4 +1,4 @@
-# BoozeBox
+![Image of Yaktocat](https://github.com/BoozeBox/BoozeBox-Website/blob/master/logo/boozeboxlogo.png)
 
 Dit is de BoozeBox website Repository, hier vind je alle assets en al de code die wij gebruiken in onze website.
 
