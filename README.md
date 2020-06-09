@@ -8,7 +8,7 @@ Dit is de BoozeBox website Repository, hier vind je alle assets en al de code di
 
 ## Video over website
 
-[Bekijk video hier](https://youtu.be/zaQI31gz6PQ) - - video opgenomen op kantoor dus geniet van de achtergrond muziek ;)
+[Bekijk video hier](https://youtu.be/zaQI31gz6PQ) - video opgenomen op kantoor dus geniet van de achtergrond muziek ;)
 
 ## Video over design
 
