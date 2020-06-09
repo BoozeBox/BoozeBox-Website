@@ -6,11 +6,11 @@ Dit is de BoozeBox website Repository, hier vind je alle assets en al de code di
 
 [BoozeBox website](http://27202.hosts2.ma-cloud.nl/bewijzenmap/jaar2/periode1.3/K_ID/BoozeBox/public/index.html)
 
-## Uitleg video website
+## Video over website
 
 - onderweg
 
-## Uitleg video design
+## Video over design
 
 - onderweg
 
