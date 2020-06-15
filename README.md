@@ -2,7 +2,7 @@
 
 Dit is de BoozeBox website Repository, hier vind je alle assets en al de code die wij gebruiken in onze website.
 
-## Huidige Link
+## Huidige Link - Optimaal responsive op Pixel 2 scherm
 
 [BoozeBox website](http://25953.hosts2.ma-cloud.nl/bewijzenmap/KID/boozebox/public/index.html)
 
