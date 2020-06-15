@@ -4,7 +4,7 @@ Dit is de BoozeBox website Repository, hier vind je alle assets en al de code di
 
 ## Huidige Link
 
-[BoozeBox website](http://27202.hosts2.ma-cloud.nl/bewijzenmap/jaar2/periode1.3/K_ID/BoozeBox/public/index.html)
+[BoozeBox website](http://25953.hosts2.ma-cloud.nl/bewijzenmap/KID/boozebox/public/index.html)
 
 ## Video over website
 
