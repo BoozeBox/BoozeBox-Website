@@ -41,7 +41,19 @@
                                 <br>
                                 <p class="beschrijving">Paypal <input class="radio" id="paypal" name="betaal" value="paypal" type="radio"></p>
                                 <p class="beschrijving">Creditcard <input id="credit" name="betaal" value="credit" type="radio"></p>
-                                <p class="beschrijving">Ideal <input id="ideal" name="betaal" value="ideal" type="radio"></p>
+                                <div class="ideal-betaling">
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Ideal</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#Rabobank">Rabobank</a>
+                                      <a href="#ABNAmro">ABN Amro</a>
+                                      <a href="#ING">ING</a>
+                                      <a href="#ASN">ASN</a>
+                                      <a href="#SNS">SNS</a>
+                                      <a href="#VanLandschot">Van Landschot</a>
+                                    </div>
+                                  </div>
+                                </div>
                                 <br>
                                 <p class="beschrijving">Totaal: &euro;12,95</p>
                                 <br><br><br><br>
@@ -59,6 +71,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
         <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
 
     </body>
 </html>
