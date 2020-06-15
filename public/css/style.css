@@ -775,6 +775,7 @@ footer {
 @media only screen and (max-width: 600px) {
   .small-four {
     margin-bottom: 25px;
+    height: 50vh;
   }
 }
 
