@@ -6,7 +6,7 @@ Dit is de BoozeBox website Repository, hier vind je alle assets en al de code di
 
 [BoozeBox website](http://25953.hosts2.ma-cloud.nl/bewijzenmap/KID/boozebox/public/index.html) - Optimaal responsive op Pixel 2 scherm (Niet XL)
 
-[BoozeBox XD Design](https://xd.adobe.com/view/6174f5a1-7905-4946-4b95-a1fa0be14046-1745/grid)
+[BoozeBox XD Design](https://xd.adobe.com/view/6174f5a1-7905-4946-4b95-a1fa0be14046-1745/grid) - Adobe XD bestand ook te downloaden uit de design map
 
 ## Video's over website en design
 
